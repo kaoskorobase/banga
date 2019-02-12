@@ -12,3 +12,6 @@ jack = "0.6"
 midir = "0.5"
 sodium-rust = "1.0"
 wmidi = "1.1"
+
+[build-dependencies]
+bindgen = "0.42.2"
