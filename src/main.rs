@@ -43,18 +43,15 @@ fn main() {
     let mut sodium_ctx = SodiumCtx::new();
     let sodium_ctx = &mut sodium_ctx;
     let midi_s: StreamSink<NoGc<MidiMessage<'static>>> = sodium_ctx.new_stream_sink();
-    let out_l = midi_s.to_stream().listen(
-        move |a|
-            println!("{:?}", **a)
-    );
-    
+    let out_l = midi_s.to_stream().listen(move |a| println!("{:?}", **a));
+
     loop {
         let msg = rx.recv().unwrap();
         midi_s.send(&NoGc::new(msg));
     }
 
     out_l.unlisten();
-    
+
     // optional deactivation
     active_client.deactivate().unwrap();
 }

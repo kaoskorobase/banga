@@ -49,6 +49,7 @@ name = "banga"
 version = "0.1.0"
 dependencies = [
  "bindgen 0.42.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "fixedbitset 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "jack 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "libc 0.2.48 (registry+https://github.com/rust-lang/crates.io-index)",
  "midir 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -186,6 +187,11 @@ dependencies = [
  "regex 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "termcolor 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "fixedbitset"
+version = "0.1.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "glob"
@@ -562,6 +568,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum coremidi 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "33326bbe31e4f0102c694281998365bf37ecd7ed08d2993ded0c19c57579cbed"
 "checksum coremidi-sys 2.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "07f05827cebb30dcd539ff1ac9bf6764f574a15fa147f8572f99d7617142f95e"
 "checksum env_logger 0.5.13 (registry+https://github.com/rust-lang/crates.io-index)" = "15b0a4d2e39f8420210be8b27eeda28029729e2fd4291019455016c348240c38"
+"checksum fixedbitset 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)" = "86d4de0081402f5e88cdac65c8dcdcc73118c1a7a465e2a05f0da05843a8ea33"
 "checksum glob 0.2.11 (registry+https://github.com/rust-lang/crates.io-index)" = "8be18de09a56b60ed0edf84bc9df007e30040691af7acd1c41874faac5895bfb"
 "checksum humantime 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3ca7e5f2e110db35f93b837c81797f3714500b81d517bf20c431b16d3ca4f114"
 "checksum jack 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "064b66c901bbbfd8f991e8c5923376f52cf832115aaf77ae97173c4bbc33274e"

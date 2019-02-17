@@ -18,8 +18,11 @@ fn main() {
         // bindings for.
         .header("src/methcla_wrapper.h")
         .clang_arg("-I../samplecount/methcla/include")
-        .whitelist_type("methcla_.*")
+        .whitelist_type("Methcla_.*")
         .whitelist_function("methcla_.*")
+        .prepend_enum_name(false)
+        .bitfield_enum("Methcla_BusMappingFlags")
+        .bitfield_enum("Methcla_NodeDoneFlags")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
